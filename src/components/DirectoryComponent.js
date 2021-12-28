@@ -12,8 +12,7 @@ function RenderDirectoryItem ({campsite, onClick}) {
     )
 }
 
-function Directory (props)  {
-   
+function Directory (props) {
     const directory = props.campsites.map(campsite => {
         return (
             <div key={campsite.id} className="col-md-5 m-1">
@@ -21,7 +20,6 @@ function Directory (props)  {
             </div>
         );
     });
-
     return (
         <div className="container">
             <div className="row">
