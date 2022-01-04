@@ -25,7 +25,7 @@ export const CAMPSITES = [
     },
     {
         id: 3,
-        name:"Redux Woods Campground",
+        name:"Redux Woods Campground - Campsite",
         image: "/assets/images/redux-woods.jpg",
         elevation: 42,
         featured: true,
