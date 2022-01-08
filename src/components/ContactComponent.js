@@ -71,10 +71,11 @@ class Contact extends Component{
     }
 
     handleInputChange(event) {
+       
         const target = event.target;
         const name = target.name;
         const value = target.type === 'checkbox' ? target.checked : target.value;
-    
+
         this.setState({
             [name]: value
         });
@@ -124,15 +125,17 @@ class Contact extends Component{
 
                     <div className="col-md-10">
                         <Form onSubmit={this.handleSubmit}>
-                        <FormGroup row>
+                            <FormGroup row>
                                 <Label htmlFor="firstName" md={2}>First Name</Label>
                                 <Col md={10}>
                                     <Input type="text" id="firstName" name="firstName"
                                         placeholder="First Name"
+                                        required
                                         value={this.state.firstName}
                                         invalid={errors.firstName}
                                         onBlur={this.handleBlur("firstName")}
-                                        onChange={this.handleInputChange} />
+                                        onChange={this.handleInputChange} 
+                                        />
                                     <FormFeedback>{errors.firstName}</FormFeedback>
                                 </Col>
                             </FormGroup>
