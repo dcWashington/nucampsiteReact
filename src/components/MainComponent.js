@@ -28,7 +28,6 @@ const mapDispatchToProps = {
     fetchPromotions: () => (fetchPromotions())
 };
 
-
 class Main extends Component {
 
     componentDidMount() {
